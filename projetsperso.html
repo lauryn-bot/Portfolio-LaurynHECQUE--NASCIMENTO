@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelauryn.css">
+    <title>PORTFOLIO BTS SIO-PROJETS PERSONNELS</title>
+</head>
+    <body>
+    <nav>
+        <div class="container">
+            <div class="logo" onclick="showPage('accueil')">Portfolio BTS SIO SISR</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu">
+                <li><a href="indexlauryn.html" onclick="showPage('accueil')" class="nav-link active">Accueil</a></li>
+                <li><a href="compétences.html" onclick="showPage('skills')" class="nav-link">Compétences</a></li>
+                <li><a href="projetsperso.html" onclick="showPage('projets')" class="nav-link">Projets personnels</a></li>
+                <li><a href="diplomes.html" onclick="showPage('diplomes')" class="nav-link">Diplômes</a></li>
+                <li><a href="experiences.html" onclick="showPage('experiences')" class="nav-link">Expériences</a></li>
+            </ul>
+        </div>
+    </nav>
+     <div id="accueil" class="page active">
+        <section class="entete">
+            <h1>HECQUE--NASCIMENTO Lauryn</h1>
+            <p>Étudiant BTS SIO Option SISR - Solutions d'Infrastructure, Systèmes et Réseaux</p>
+        </section>
+        </div>
+        </section>
+            <!-- Page Projets -->
+    <div id="projets" class="page">
+        <section class="content-section">
+            <div class="container">
+                <h1>Mes projets personnels</h1>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">🖥️</div>
+                        <div class="project-content">
+                            <h3>Infrastructure réseau d'entreprise</h3>
+                            <p>Conception et déploiement d'une infrastructure réseau complète avec VLANs, routage inter-VLAN et serveur DHCP/DNS pour une PME fictive.</p>
+                            <div class="project-tags">
+                                <span class="tag">Cisco</span>
+                                <span class="tag">VLANs</span>
+                                <span class="tag">Windows Server</span>
+                                <span class="tag">DNS/DHCP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">🔐</div>
+                        <div class="project-content">
+                            <h3>Site web entreprise</h3>
+                            <p>Création d'un site web pour une entreprise nommée VYTHAL (entreprise amicale).</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                                <span class="tag">Canva</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">📊</div>
+                        <div class="project-content">
+                            <h3>Plateforme de supervision</h3>
+                            <p>Déploiement d'une solution de supervision avec Zabbix pour monitorer l'infrastructure, serveurs et services avec alerting automatique.</p>
+                            <div class="project-tags">
+                                <span class="tag">Zabbix</span>
+                                <span class="tag">SNMP</span>
+                                <span class="tag">Monitoring</span>
+                                <span class="tag">Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">👥</div>
+                        <div class="project-content">
+                            <h3>Active Directory avec GPO</h3>
+                            <p>Administration d'un annuaire Active Directory avec création d'OUs, gestion des utilisateurs et déploiement de stratégies de groupe (GPO).</p>
+                            <div class="project-tags">
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">GPO</span>
+                                <span class="tag">PowerShell</span>
+                                <span class="tag">Windows Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">🔄</div>
+                        <div class="project-content">
+                            <h3>Cluster Proxmox HA</h3>
+                            <p>Mise en place d'un cluster Proxmox avec haute disponibilité pour héberger des VMs et conteneurs LXC avec migration à chaud.</p>
+                            <div class="project-tags">
+                                <span class="tag">Proxmox</span>
+                                <span class="tag">KVM</span>
+                                <span class="tag">LXC</span>
+                                <span class="tag">HA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">💾</div>
+                        <div class="project-content">
+                            <h3>Solution de sauvegarde automatisée</h3>
+                            <p>Automatisation des sauvegardes avec scripts Bash, rotation des backups et mise en place d'un plan de reprise d'activité (PRA).</p>
+                            <div class="project-tags">
+                                <span class="tag">Bash</span>
+                                <span class="tag">Rsync</span>
+                                <span class="tag">Backup</span>
+                                <span class="tag">PRA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">🐳</div>
+                        <div class="project-content">
+                            <h3>Infrastructure Docker</h3>
+                            <p>Déploiement d'applications conteneurisées avec Docker Compose, incluant reverse proxy Nginx et gestion SSL avec Let's Encrypt.</p>
+                            <div class="project-tags">
+                                <span class="tag">Docker</span>
+                                <span class="tag">Compose</span>
+                                <span class="tag">Nginx</span>
+                                <span class="tag">SSL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">🤖</div>
+                        <div class="project-content">
+                            <h3>Scripts d'automatisation réseau</h3>
+                            <p>Développement de scripts Python pour automatiser la configuration de switchs Cisco et la génération de rapports réseau.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Netmiko</span>
+                                <span class="tag">Automatisation</span>
+                                <span class="tag">Cisco</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">🛡️</div>
+                        <div class="project-content">
+                            <h3>Lab de cybersécurité</h3>
+                            <p>Création d'un laboratoire de test avec machines vulnérables pour pratiquer le pentesting et le hardening de systèmes.</p>
+                            <div class="project-tags">
+                                <span class="tag">Kali Linux</span>
+                                <span class="tag">Metasploit</span>
+                                <span class="tag">Pentesting</span>
+                                <span class="tag">Sécurité</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <footer>
+        <div id="mon_telephone">
+            <h1>Mon numéro de téléphone : </h1>
+            <p><a href="tel:+33766570094"> 06 63 76 17 76</a></p>
+        </div>
+        <div id="mon_mail">
+            <h1>Mon e-mail : </h1>
+            <p><a href="mailto:hecquelauryn@gmail.com">hecquelauryn@gmail.com</a></p>
+        </div>
+        <div id="mon_linkedin">
+            <h1>Mon LinkedIn : </h1>
+            <p><a href="https://www.linkedin.com/in/lauryn-hecque-nascimento?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">https://www.linkedin.com/in/monprofil/</a></p>
+        </div>
+     </footer>
+</body>
+</html>
